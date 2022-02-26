@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Curso Algoritmo</title>
-    </head>
-    <body>
-        <p id="paragrafo">Texto para ser mudado!!!</p>
-        <button onclick="acaoBotao()"> Iniciar acao</button>
-    </body>
-    <script src="estrutura-repita.js"></script>
-</html>   
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <!--pwl css-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style/responsive.css">
+
+
+    <title>Netflix</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+              <a href="#">Início</a>
+              <a href="#">Séries</a>
+              <a href="#">Filmes</a>
+              <a href="#">Documentarios</a>
+          </nav>
+         </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">FLASH</h3>
+                <p class="descricao">Um perito forense desperta de um coma com poderes especiais que serão postos à prova na luta contra forças que ameaçam a cidade.</p>
+            <div class="botoes">
+                <a href="#" onclick="lightbox_open();"><button role="button" class="botao">
+                <i class="fa-solid fa-play"></i>
+                VER TRAILER
+            </button></a>
+            <button role="button" class="botao">
+                <i class="fa-solid fa-circle-info"></i>
+                MAIS INFORMAÇÕES
+            </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="carrosel-filme">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="image/1.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="image/2.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="image/3.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="image/4.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="image/5.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="image/6.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="image/7.jpg" alt="" srcset="">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="image/8.jpg" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/eda1702c90.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/main.js"></script>
+
+    <div id="light" class="videobox">
+      <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+      <video id="VisaChipCardVideo" width="800" controls>
+        <source src="/video/trailer-flash.mp4" type="video/mp4">
+        <!--Browser does not support <video> tag -->
+      </video>
+    </div>
+    <div id="fade" onClick="lightbox_close();"></div>
+    <div id="fade" onClick="lightbox_close();">
+    </div>
+    
+
+
+
+</body>
+</html>
